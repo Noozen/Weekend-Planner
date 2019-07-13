@@ -1,11 +1,12 @@
-package pl.mbierut.models.weatherdata;
+package pl.mbierut.models.weather;
 
 import lombok.Data;
-import pl.mbierut.models.weatherdata.weatherdatasubsection.WeatherSubsection;
+import lombok.ToString;
 
 import java.time.LocalDate;
 
 @Data
+@ToString
 public class WeatherData {
     int moonrise_ts;
     String wind_cdir;

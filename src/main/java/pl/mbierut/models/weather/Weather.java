@@ -1,11 +1,12 @@
-package pl.mbierut.models;
+package pl.mbierut.models.weather;
 
 import lombok.Data;
-import pl.mbierut.models.weatherdata.WeatherData;
+import lombok.ToString;
 
 import java.util.List;
 
 @Data
+@ToString
 public class Weather {
     List<WeatherData> data;
     String city_name;
